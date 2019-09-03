@@ -9,6 +9,8 @@ RUN npm install
 # Используется при сборке кода в продакшене
 # RUN npm install --only=production
 
+COPY index.js
+
 EXPOSE 3000
 CMD [ "node", "index.js" ]
 #new dockerfile bleat'
